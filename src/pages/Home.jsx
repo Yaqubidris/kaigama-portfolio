@@ -4,7 +4,9 @@ import 'aos/dist/aos.css';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faHandsHelping, faMedal, faShieldAlt, faMoneyBillWave, faChartLine, faBuilding, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-
+import Kaigama10 from './images/Kaigama10.jpg';
+import Kaigama11 from './images/Kaigama11.jpg';
+import Kaigama9 from './images/Kaigama9.jpg';
 
 const Home = () => {
   useEffect(() => {
@@ -40,7 +42,7 @@ const Home = () => {
     </div>
 
           <div className="bio-image" data-aos="fade-left">
-            <img src="/images/Kaigama10.jpg" alt="Umar Yusuf" />
+            <img src={Kaigama10} alt="Kaigama" />
           </div>
         </div>
       </div>
@@ -151,14 +153,14 @@ const Home = () => {
 
 <div className="media-grid">
   <div className="media-card">
-    <img src="/images/Kaigama11.jpg" alt="Hajj Press Conference" />
+    <img src={Kaigama11} alt="Kaigama" />
     <h4>Hajj Press Conference 2024</h4>
     <p>Addressing preparations and digital reforms.</p>
     <a href="https://web.facebook.com/watch/?v=897167442523312" target="_blank">Watch Video</a>
   </div>
 
   <div className="media-card">
-    <img src="/images/Kaigama9.jpg" alt="NTA Interview" />
+    <img src={Kaigama9} alt="Kaigama" />
     <h4>Exclusive Interview with NTA</h4>
     <p>Discussing interfaith harmony in governance.</p>
     <a href="https://example.com/article" target="_blank">Read Article</a>
