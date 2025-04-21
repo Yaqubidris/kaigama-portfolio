@@ -1,0 +1,262 @@
+.customs-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  /* HERO SECTION */
+  .customs-hero {
+    background-color: #0d7759;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .customs-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .customs-hero p {
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  
+  /* OVERVIEW + LOGO SECTION */
+  .overview-logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 0px 50px;
+  }
+  .customs-logo img {
+    max-width: 400px;
+    height: auto;
+  }
+  .customs-overview-card {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 600px;
+    height: 250px;
+    margin-top: 20px;
+    
+  }
+  
+  /* ACHIEVEMENTS + IMAGE SECTION */
+  .achievements-image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 0px 60px;
+  }
+  .customs-achievements-card {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2rem;
+    border-radius: 12px;
+    flex: 1;
+    height: 350px;
+    max-width: 600px;
+  }
+
+  .customs-achievements-card h2{
+    color: #054734;
+    padding:  0px 0px 20px 0px;
+  }
+  .customs-achievements ul {
+    padding-left: 1.5rem;
+  }
+  .customs-achievements li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .customs-image img {
+    width: 400px;
+    border-radius: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    height: 350px;
+  }
+  
+  /* SERVICE TIMELINE */
+  .service-timeline {
+    position: relative;
+    /* padding: 2rem 0; */
+    padding:  0px 60px;
+  }
+  .service-timeline h2{
+    color: #054734;
+    padding:  0px 0px 40px 0px;
+
+  }
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  .timeline-item.left {
+    left: 0;
+    text-align: left;
+  }
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+  }
+  .timeline-content {
+    background: #fff;
+    border-left: 4px solid #0d7759;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  
+  /* COMMENDATIONS */
+  .commendations-section h2{
+    color: #054734;
+    padding:  0px 0px 40px 0px;
+
+  }
+  .commendations-section {
+    margin: 4rem 0;
+  }
+  .commendation-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .commendation-cards .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .commendation-cards .icon {
+    font-size: 2rem;
+    color: #0d7759;
+    margin-bottom: 0.5rem;
+  }
+  .commendation-cards p {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* IMPACT STATS (ZIGZAG TIMELINE) */
+  .impact-stats h2{
+    color: #054734;
+    padding:  0px 0px 40px 0px;
+  }
+  .impact-stats {
+    margin-top: 4rem;
+  }
+  .zigzag-item {
+    position: relative;
+    width: 50%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+  .zigzag-item.left {
+    text-align: left;
+    left: 0;
+  }
+  .zigzag-item.right {
+    text-align: left;
+    left: 50%;
+  }
+  .zigzag-content {
+    background: #e7f5ef;
+    border-left: 5px solid #0d7759;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  
+  /* RELATED LINK */
+  .related-link {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .related-card {
+    display: inline-block;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 16px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  .related-card:hover {
+    transform: scale(1.05);
+  }
+  .related-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  .related-card p {
+    color: #054734;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .overview-logo-section,
+    .achievements-image-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0px 20px;
+    }
+  
+    .customs-overview-card,
+    .customs-logo img,
+    .customs-achievements-card,
+    .customs-image img {
+      max-width: 100% !important;
+      height: auto;
+    }
+    .service-timeline {
+        /* position: relative; */
+        /* padding: 2rem 0; */
+        padding:  0px 10px;
+      }
+  
+    .timeline-item,
+    .zigzag-item {
+      width: 100%;
+      left: 0 !important;
+      padding: 1rem 0 !important;
+    }
+  
+    .timeline-content,
+    .zigzag-content {
+      border-left: 4px solid #0d7759;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .commendation-cards {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .commendation-cards .card{
+        padding: 30px 50px;
+
+      
+    }
+  
+    .customs-image img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+   

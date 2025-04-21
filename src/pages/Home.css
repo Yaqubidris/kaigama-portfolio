@@ -1,0 +1,506 @@
+.hero-static {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/Kaigama3.jpg'); /* fallback image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(5, 71, 52, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Bio section */
+.quick-bio-section {
+  padding: 3rem 1rem;
+}
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-text, .bio-image {
+  flex: 1 1 300px;
+}
+
+/* .bio-text {
+  padding: 1rem;
+} */
+
+.bio-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-image img {
+    max-width: 100%;
+  }
+}
+
+.quick-bio-section {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.bio-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap; /* This allows it to stack naturally on mobile */
+}
+
+.bio-text,
+.bio-image {
+  flex: 1 1 100px;
+}
+
+
+.bio-text h2 {
+  color: #054734;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.read-more {
+  display: inline-block;
+  color: #054734;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #054734;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  color: #022c22;
+  border-bottom-color: #022c22;
+}
+
+.bio-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bio-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bio-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bio-text {
+    text-align: center;
+  }
+
+  .bio-text h2 {
+    font-size: 2rem;
+  }
+
+  .bio-text p {
+    font-size: 1rem;
+  }
+ 
+}
+.achievements-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.achievements-section h2 {
+  font-size: 2.5rem;
+  color: #054734;
+  margin-bottom: 40px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.achievement-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+}
+
+.achievement-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.achievement-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #054734;
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-section h2 {
+    font-size: 2rem;
+  }
+
+  .achievement-card {
+    padding: 20px 15px;
+  }
+}
+.achievement-card .icon {
+  font-size: 40px;
+  color: #054734;
+  margin-bottom: 20px;
+}
+
+.vision-mission-section {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.vision-mission-section h2 {
+  font-size: 2.5rem;
+  color: #054734;
+  margin-bottom: 40px;
+}
+
+.vision-mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vision,
+.mission {
+  flex: 1 1 400px;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision h3,
+.mission h3 {
+  color: #054734;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.vision p,
+.mission p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .vision-mission-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.timeline-section {
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  font-size: 2.5rem;
+  color: #054734;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 10px;
+  border-left: 3px solid #054734;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #054734;
+  border: 3px solid white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #054734;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .timeline-item {
+    padding: 20px;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+}
+/* .home-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+} */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.media-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+}
+
+.media-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.media-card h4 {
+  margin: 15px;
+  font-size: 1.1rem;
+  color: #054734;
+}
+
+.media-card p {
+  margin: 0 15px 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.media-card a {
+  margin: 10px 15px 15px;
+  display: inline-block;
+  color: #fff;
+  background-color: #054734;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.gallery-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  color: #054734;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 40px 15px; /* Reduce padding */
+  }
+
+  .gallery-section h2 {
+    font-size: 2rem; /* Reduce heading size */
+    margin-bottom: 30px; /* Reduce margin below heading */
+  }
+
+  .gallery-grid {
+    gap: 15px; /* Reduce gap between grid items */
+    /* The grid-template-columns rule is already quite responsive,
+       but you could adjust minmax() here if needed, e.g., minmax(200px, 1fr) */
+  }
+}
+
+/* Styles for small mobile screens (e.g., up to 480px wide) */
+/* Styles for small mobile screens (e.g., up to 480px wide) */
+@media (max-width: 480px) {
+  .gallery-section {
+    padding: 30px 10px; /* Further reduce padding */
+  }
+
+  .gallery-section h2 {
+    font-size: 1.8rem; /* Further reduce heading size */
+    margin-bottom: 20px; /* Further reduce margin */
+  }
+
+  .gallery-grid {
+    /* --- CHANGE THIS --- */
+    /* Force the grid into a single column */
+    grid-template-columns: 1fr;
+
+    /* You might want a slightly larger gap when stacked vertically */
+    gap: 15px; /* Adjusted from 10px, feel free to change */
+  }
+
+   /* Optional: Disable hover zoom on touch devices */
+   @media (hover: none) {
+     .gallery-item:hover img {
+       transform: none; /* Disable zoom effect */
+     }
+   }
+}
