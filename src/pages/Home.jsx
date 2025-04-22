@@ -40,7 +40,7 @@ const Home = () => {
     </div>
 
           <div className="bio-image" data-aos="fade-left">
-              <img src="/kaigama-portfolio/images/Kaigama10.jpg" alt="Umar Yusuf" />
+              <img src="kaigama-portfolio/images/Kaigama10.jpg" alt="Umar Yusuf" />
           </div>
         </div>
       </div>
